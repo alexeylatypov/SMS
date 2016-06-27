@@ -1,0 +1,21 @@
+{
+    "name": "latypov/yii2-sms",
+    "description": "Send sms with Russian mobile operator (MegaFon)",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "latypov",
+            "email": "alexey.latypov@live.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "latypov\\sms\\": ""
+        }
+    }
+}
