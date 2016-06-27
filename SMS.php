@@ -27,8 +27,11 @@ class SMS extends \yii\base\Widget
 		}
 		
 		$m = new OMS\OMS_Message(new OMS\OMS_Body_SMS('Проверка связи'),'+79221234529');
-		var_dump($c->DeliverXms($m)); //so we send that. Careful with it.
-		return "ok";
+		if($c->DeliverXms($m))
+			return true;
+		else {
+			return false;
+		}
 
     }
 }
